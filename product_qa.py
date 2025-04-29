@@ -16,6 +16,7 @@ from langchain_core.runnables import RunnableWithMessageHistory
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.chat_message_histories import ChatMessageHistory
 
+from callback_logging import callbacks
 
 # 导入pdf，进行问答分析
 # 使用自行构建的deepseek-R1-8b
