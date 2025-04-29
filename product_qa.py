@@ -117,7 +117,8 @@ result_chain = RunnableWithMessageHistory(
     get_session_history,
     input_messages_key='input',
     history_messages_key='chat_history',
-    output_messages_key='answer'
+    output_messages_key='answer',
+    config={'callbacks':callbacks}
 )
 
 app = FastAPI(title='问答服务', version='V1.0', description='基于产品和安装问答的服务器')
